@@ -33,7 +33,7 @@ class _AhadethTabState extends State<AhadethTab> {
             color: MyThemeData.primarycolor,
           ),
           Text(
-           AppLocalizations.of(context)!.ahadethname,
+        AppLocalizations.of(context)!.ahadethname,
             style: Theme.of(context)
                 .textTheme
                 .bodyMedium!

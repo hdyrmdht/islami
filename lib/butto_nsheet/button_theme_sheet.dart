@@ -6,7 +6,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:islami/theme_data.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../providers/my_provider.dart';
 
 class ButtonthemeSheet extends StatelessWidget {
@@ -27,7 +27,7 @@ class ButtonthemeSheet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Light",
+               AppLocalizations.of(context)!.light,
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: provider.theme == ThemeMode.light
                         ? Theme.of(context).colorScheme.background
@@ -52,7 +52,7 @@ class ButtonthemeSheet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Dark",
+                AppLocalizations.of(context)!.dark,
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: provider.theme == ThemeMode.dark
                         ? Theme.of(context).colorScheme.background

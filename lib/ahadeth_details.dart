@@ -5,7 +5,7 @@ import 'package:islami/hadeth_model.dart';
 import 'package:islami/providers/my_provider.dart';
 import 'package:islami/theme_data.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class Ahadethdetails extends StatelessWidget {
   static const String routeName="ahadethdetail";
   const Ahadethdetails({super.key});

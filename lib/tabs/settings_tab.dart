@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:islami/providers/my_provider.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../butto_nsheet/button_language_sheet.dart';
 import '../butto_nsheet/button_theme_sheet.dart';
 import '../theme_data.dart';
@@ -28,7 +28,7 @@ class _SettingsTabState extends State<SettingsTab> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            "Language",
+          AppLocalizations.of(context)!.language,
             style: Theme.of(context)
                 .textTheme
                 .bodyMedium!
@@ -46,7 +46,7 @@ class _SettingsTabState extends State<SettingsTab> {
                 border: Border.all(color: MyThemeData.primarycolor),
               ),
               child: Text(
-               pro.local=="en"?"English":"Arabic",
+               pro.local=="en"?AppLocalizations.of(context)!.english:AppLocalizations.of(context)!.arabic,
                 style: Theme.of(context)
                     .textTheme
                     .bodyMedium!
@@ -76,7 +76,7 @@ class _SettingsTabState extends State<SettingsTab> {
                 border: Border.all(color: MyThemeData.primarycolor),
               ),
               child: Text(
-               pro.theme==ThemeMode.light? "Light":"Dark",
+               pro.theme==ThemeMode.light? AppLocalizations.of(context)!.light:AppLocalizations.of(context)!.dark,
                 style: Theme.of(context)
                     .textTheme
                     .bodyMedium!

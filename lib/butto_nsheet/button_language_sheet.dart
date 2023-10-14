@@ -6,7 +6,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:islami/theme_data.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../providers/my_provider.dart';
 
 class ButtonLanguageSheet extends StatelessWidget {
@@ -27,7 +27,7 @@ class ButtonLanguageSheet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "English",
+                AppLocalizations.of(context)!.english,
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: provider.local == "en"
                        ? Theme.of(context).colorScheme.background
@@ -50,7 +50,7 @@ class ButtonLanguageSheet extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Arabic",
+               AppLocalizations.of(context)!.arabic,
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: provider.local == "ar"
                      ? Theme.of(context).colorScheme.background

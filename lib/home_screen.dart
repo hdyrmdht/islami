@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
               items: [
                 BottomNavigationBarItem(
                   icon:ImageIcon(AssetImage("assets/images/quran.png")),
-                  label: AppLocalizations.of(context)!.quran,
+                  label:  AppLocalizations.of(context)!.quran,
                   backgroundColor:Theme.of(context).colorScheme.primary,
                 ),
                 BottomNavigationBarItem(

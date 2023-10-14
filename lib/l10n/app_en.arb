@@ -7,5 +7,10 @@
   "radio": "Radio",
   "settings": "Settings",
   "english": "English",
-  "arabic": "Arabic"
+  "arabic": "Arabic",
+  "tasbeha": "Tasbeha Number",
+  "language": "Language",
+  "dark": "Dark",
+  "light": "Light",
+  "mode": "Mode"
 }
